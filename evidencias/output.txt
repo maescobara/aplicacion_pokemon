@@ -1,0 +1,23 @@
+Nombre del Pokémon: TOTO    Tto  otodile
+
+=== TOTODILE ===
+Imagen: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png
+Región: Johto
+
+Descripción: Es pequeño pero violento. No dudará en morder cualquier cosa que se mueva cerca.
+Habilidades: Torrent, Sheer force
+
+Es fuerte contra: Fire, Ground, Rock
+Es débil contra  : Grass, Electric
+
+ESTADÍSTICAS:
+Tipo(s)            : Water
+HP (Vida)          : 50
+Ataque             : 65
+Defensa            : 64
+Ataque Especial    : 44
+Defensa Especial   : 48
+Velocidad          : 43
+
+LÍNEA EVOLUTIVA:
+Totodile -> Croconaw -> Feraligatr
