@@ -1,0 +1,18 @@
+node {
+    // #Limpieza del entorno previo
+    stage('Preparation') {
+        // #catchError asegura que si pokeservice no existe, el pipeline no se caiga y continúe en verde
+        catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+            echo 'Deteniendo y eliminando el contenedor previo si existe...'
+            sh 'docker stop pokeservice'
+            sh 'docker rm pokeservice'
+        }
+    }
+    
+    // #Ejecución del Job de Estilo Libre
+    stage('Build') {
+        echo 'Iniciando BuildAppJob secuencialmente...'
+        // #Llama de forma segura al trabajo que clona, construye y ejecuta
+        build 'BuildAppJob'
+    }
+}
