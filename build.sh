@@ -20,4 +20,4 @@ docker build -t pokemon-app .
 docker rm -f pokeservice 2>/dev/null
 
 echo "Ejecutando el contenedor..."
-docker run -it --name pokeservice pokemon-app
+echo "pikachu" | docker run -i --name pokeservice pokemon-app
