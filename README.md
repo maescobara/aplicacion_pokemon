@@ -29,6 +29,12 @@ Para asegurar la portabilidad del software, el script ha sido contenerizado util
 Desde la raíz del proyecto, ejecute:
 ```bash
 docker build -t pokemon-app .
+```
+
+Ejecución del Contenedor:
+```bash
+docker run -it --name pokeservice pokemon-app
+```
 
 ## Automatización con Jenkins (CI/CD)
 
